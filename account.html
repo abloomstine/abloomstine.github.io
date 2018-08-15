@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ulf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>diadem</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/headerfooter.css">
+</head>
+
+<body>
+<header class="open">
+  <a href="diadem.html"><img src="images/diademlogo.png" class ="logo"></a>
+  <div id="hamburger">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
+  </div>
+  <nav id="dropdown">
+    <a href="diadem.html">home</a>
+    <a href="aboutus.html">about us</a>
+    <a href="sports.html">sports</a>
+    <a href="modal.html">sign up</a>
+  </nav>
+</header>
+   <div id="output">
+     <h3>join us now </h3>
+      <h3> for real-time sports betting </h3>
+        <h3> you won't want to miss.... </h3>
+   </div> 
+  <div class="signup">
+    <form>    
+      name:<br>
+      <input type="text" name="name" ><br> 
+      email: <br>
+      <input type="email" name="email" ><br>
+      phone number:<br>
+      <input type="tel" name="phonenumber"><br>
+      username:<br>
+      <input type="text" name="username">
+      <br>
+      <button> sign up </button> 
+    </form>
+  </div>
+
+
+<footer>
+      <div class="networking">
+        <a href="https://www.twitter.com/livediadem">
+        <img src="images/twitter.png" alt="twitter"></a>
+        <a href="https://www.livediadem.com/"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/livediadem/?hl=en"><img src="images/insta.png" alt="instagram"></a>
+      </div>
+      <div class="copyright">
+        copyright 2018 diadem
+      </div>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+$('#hamburger').click(function(){
+  $('header').toggleClass('open');
+});
+</script>
+  </body>

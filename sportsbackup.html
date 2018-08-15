@@ -1,0 +1,404 @@
+const foot = [
+    {
+      footballTitle: "arizona cardinals <br> roster | schedule",
+      footballImage: "images/football/arizonacardinals.png",
+      hockeyTitle: "anaheim ducks <br> roster | schedule",
+      hockeyImage: "images/hockey/anaheimducks.png",
+      basketballTitle: "atlanta hawks <br> roster | schedule",
+      basketballImage: "images/basketball/atlantahawks.png",
+      baseballTitle: "arizona diamondbacks <br> roster | schedule",
+      baseballImage: "images/baseball/arizonadiamondbacks.png",
+      soccerTitle: "arsenal <br> roster | schedule",
+      soccerImage: "images/bpl/arsenal.png",
+    },
+    {
+      footballTitle:  "atlanta falcons <br>roster | schedule",
+      footballImage: "images/football/atlantafalcons.png",
+      hockeyTitle: "arizona coyotes <br> roster | schedule",
+      hockeyImage: "images/hockey/arizonacoyotes.png",
+      basketballTitle: "boston celtics <br> roster | schedule",
+      basketballImage: "images/basketball/bostonceltics.png",
+      baseballTitle: "atlanta braves <br> roster | schedule",
+      baseballImage: "images/baseball/atlantabraves.png",
+      soccerTitle: "bournemouth <br> roster | schedule",
+      soccerImage: "images/bpl/bournemouth.png",
+    },
+    {
+      footballTitle: "baltimore ravens <br>roster | schedule",
+      footballImage: "images/football/baltimoreravens.png",
+      hockeyTitle: "boston bruins <br> roster | schedule",
+      hockeyImage: "images/hockey/bostonbruins.png",
+      basketballTitle: "brooklyn nets <br> roster | schedule",
+      basketballImage: "images/basketball/brooklynnets.png",
+      baseballTitle: "baltimore orioles <br> roster | schedule",
+      baseballImage: "images/baseball/baltimoreorioles.png",
+      soccerTitle: "brighton and hove albion <br> roster | schedule",
+      soccerImage: "images/bpl/brighton.png",
+    },
+    { 
+      footballTitle: "buffalo bills <br>roster | schedule",
+      footballImage: "images/football/buffalobills.png",
+      hockeyTitle: "buffalo sabres <br> roster | schedule",
+      hockeyImage: "images/hockey/buffalosabres.png",
+      basketballTitle: "charlotte hornets <br> roster | schedule",
+      basketballImage: "images/basketball/charlottehornets.png",
+      baseballTitle: "boston red sox <br> roster | schedule",
+      baseballImage: "images/baseball/bostonredsox.png",
+      soccerTitle: "burnley <br> roster | schedule",
+      soccerImage: "images/bpl/burnley.png",
+    },
+    {
+      footballTitle: "carolina panthers <br>roster | schedule",
+      footballImage: "images/football/carolinapanthers.png",
+      hockeyTitle: "calgaryflames <br> roster | schedule",
+      hockeyImage: "images/hockey/calgaryflames.png",
+      basketballTitle: "chicago bulls <br> roster | schedule",
+      basketballImage: "images/basketball/chicagobulls.png",
+      baseballTitle: "chicago cubs <br> roster | schedule",
+      baseballImage: "images/baseball/chicagocubs.png",
+      soccerTitle: "chelsea <br> roster | schedule",
+      soccerImage: "images/bpl/chelsea.png",
+    },
+    {
+      footballTitle: "chicago bears <br>roster | schedule",
+      footballImage: "images/football/chicagobears.png",
+      hockeyTitle: "carolina hurricanes <br> roster | schedule",
+      hockeyImage: "images/hockey/carolinahurricanes.png",
+      basketballTitle: "cleveland cavaliers <br> roster | schedule",
+      basketballImage: "images/basketball/clevelandcavaliers.png",
+      baseballTitle: "chicago white sox <br> roster | schedule",
+      baseballImage: "images/baseball/chicagowhitesox.png",
+      soccerTitle: "crystal palace <br> roster | schedule",
+      soccerImage: "images/bpl/crystalpalace.png",
+    },
+    {
+      footballTitle: "cincinnati bengals <br>roster | schedule",
+      footballImage: "images/football/cincinnatibengals.png",
+      hockeyTitle: "chicago blackhawks <br> roster | schedule",
+      hockeyImage: "images/hockey/chicagoblackhawks.png",
+      basketballTitle: "dallas mavericks <br> roster | schedule",
+      basketballImage: "images/basketball/dallasmavericks.png",
+      baseballTitle: "cincinnati reds <br> roster | schedule",
+      baseballImage: "images/baseball/cincinnatireds.png",
+      soccerTitle: "everton <br> roster | schedule",
+      soccerImage: "images/bpl/everton.png",
+    },
+    {
+      footballTitle: "cleveland browns <br>roster | schedule",
+      footballImage: "images/football/clevelandbrowns.png",
+      hockeyTitle: "colorado avalanche <br> roster | schedule",
+      hockeyImage: "images/hockey/coloradoavalanche.png",
+      basketballTitle: "denver nuggets <br> roster | schedule",
+      basketballImage: "images/basketball/denvernuggets.png",
+      baseballTitle: "cleveland indians <br> roster | schedule",
+      baseballImage: "images/baseball/clevelandindians.png",
+      soccerTitle: "huddersfield town <br> roster | schedule",
+      soccerImage: "images/bpl/huddersfield.png",
+    },
+    {
+      footballTitle: "dallas cowboys <br>roster | schedule",
+      footballImage: "images/football/dallascowboys.png",
+      hockeyTitle: "columbus blue jackets <br> roster | schedule",
+      hockeyImage: "images/hockey/columbusbluejackets.png",
+      basketballTitle: "detroit pistons <br> roster | schedule",
+      basketballImage: "images/basketball/detroitpistons.png",
+      baseballTitle: "colorado rockies <br> roster | schedule",
+      baseballImage: "images/baseball/coloradorockies.png",
+      soccerTitle: "leicaster city <br> roster | schedule",
+      soccerImage: "images/bpl/leicastercity.png",
+    },
+    {
+      footballTitle: "denver broncos <br>roster | schedule",
+      footballImage: "images/football/denverbroncos.png",
+      hockeyTitle: "dallas stars <br> roster | schedule",
+      hockeyImage: "images/hockey/dallasstars.png",
+      basketballTitle: "golden state warriors <br> roster | schedule",
+      basketballImage: "images/basketball/goldenstatewarriors.png",
+      baseballTitle: "detroit tigers <br> roster | schedule",
+      baseballImage: "images/baseball/detroitigers.png",
+      soccerTitle: "liverpool <br> roster | schedule",
+      soccerImage: "images/bpl/liverpool.png",
+    },
+    {
+      footballTitle: "detroit lions <br>roster | schedule",
+      footballImage: "images/football/detroitlions.png",
+      hockeyTitle: "detroit red wings <br> roster | schedule",
+      hockeyImage: "images/hockey/detroitredwings.png",
+      basketballTitle: "houston rockets <br> roster | schedule",
+      basketballImage: "images/basketball/houstonrockets.png",
+      baseballTitle: "houston astros <br> roster | schedule",
+      baseballImage: "images/baseball/houstonastros.png",
+      soccerTitle: "manchester city <br> roster | schedule",
+      soccerImage: "images/bpl/manchestercity.png",
+    },{
+      footballTitle: "green bay packers <br>roster | schedule",
+      footballImage: "images/football/greenbaypackers.png",
+      hockeyTitle: "edmonton oilers <br> roster | schedule",
+      hockeyImage: "images/hockey/edmontonoilers.png",
+      basketballTitle: "indiana pacers <br> roster | schedule",
+      basketballImage: "images/basketball/indianapacers.png",
+      baseballTitle: "kansas city royals <br> roster | schedule",
+      baseballImage: "images/baseball/kansascityroyals.png",
+      soccerTitle: "manchester united <br> roster | schedule",
+      soccerImage: "images/bpl/manchesterunited.png",
+    },{
+      footballTitle: "houston texans <br>roster | schedule",
+      footballImage: "images/football/houstontexans.png",
+      hockeyTitle: "florida panthers <br> roster | schedule",
+      hockeyImage: "images/hockey/floridapanthers.png",
+      basketballTitle: "los angeles clippers <br> roster | schedule",
+      basketballImage: "images/basketball/losangelesclippers.png",
+      baseballTitle: "los angeles dodgers <br> roster | schedule",
+      baseballImage: "images/baseball/loasangelesdodgers.png",
+      soccerTitle: "newcastle united <br> roster | schedule",
+      soccerImage: "images/bpl/newcastleunited.png",
+    },{
+      footballTitle: "indianapolis colts <br>roster | schedule",
+      footballImage: "images/football/indianapoliscolts.png",
+      hockeyTitle: "los angeles kings <br> roster | schedule",
+      hockeyImage: "images/hockey/losangeleskings.png",
+      basketballTitle: "los angeles lakers <br> roster | schedule",
+      basketballImage: "images/basketball/losangeleslakers.png",
+      baseballTitle: "los angeles angels<br> roster | schedule",
+      baseballImage: "images/baseball/losangelesangels.png",
+      soccerTitle: "southampton <br> roster | schedule",
+      soccerImage: "images/bpl/southhampton.png",
+    },{
+      footballTitle: "jacksonville jaguars <br>roster | schedule",
+      footballImage: "images/football/jacksonvillejaquars.png",
+      hockeyTitle: "minnesota wild <br> roster | schedule",
+      hockeyImage: "images/hockey/minnesotawild.png",
+      basketballTitle: "memphis grizzlies <br> roster | schedule",
+      basketballImage: "images/basketball/memphisgrizzlies.png",
+      baseballTitle: "miami marlins <br> roster | schedule",
+      baseballImage: "images/baseball/miamimarlins.png",
+      soccerTitle: "stoke city <br> roster | schedule",
+      soccerImage: "images/bpl/stokecity.png",
+    },{
+      footballTitle: "kansas city chiefs <br>roster | schedule",
+      footballImage: "images/football/kansascitychiefs.png",
+      hockeyTitle: "montreal canadiens <br> roster | schedule",
+      hockeyImage: "images/hockey/montrealcanadiens.png",
+      basketballTitle: "miami heat <br> roster | schedule",
+      basketballImage: "images/basketball/miamiheat.png",
+      baseballTitle: "milwaukee brewers <br> roster | schedule",
+      baseballImage: "images/baseball/milwaukeebrewers.png",
+      soccerTitle: "swansea city <br> roster | schedule",
+      soccerImage: "images/bpl/swanseacity.png",
+    },{
+      footballTitle: "miami dolphins <br>roster | schedule",
+      footballImage: "images/football/miamidolphins.png",
+      hockeyTitle: "nashville predators <br> roster | schedule",
+      hockeyImage: "images/hockey/nashvillepredators.png",
+      basketballTitle: "milwaukee bucks <br> roster | schedule",
+      basketballImage: "images/basketball/milwaukeebucks.png",
+      baseballTitle: "minnesota twins <br> roster | schedule",
+      baseballImage: "images/baseball/minnesotatwins.png",
+      soccerTitle: "tottenham hotspur <br> roster | schedule",
+      soccerImage: "images/bpl/tottenhamhottspur.png",
+    },{
+      footballTitle: "minnesota vikings <br>roster | schedule",
+      footballImage: "images/football/minnesotavikings.png",
+      hockeyTitle: "new jersey devils <br> roster | schedule",
+      hockeyImage: "images/hockey/newjerseydevils.png",
+      basketballTitle: "minnesota timberwolves <br> roster | schedule",
+      basketballImage: "images/basketball/minnesotatimberwolves.png",
+      baseballTitle: "new york mets <br> roster | schedule",
+      baseballImage: "images/baseball/newyorkmets.png",
+      soccerTitle: "watford <br> roster | schedule",
+      soccerImage: "images/bpl/watford.png",
+    },
+    {
+      footballTitle: "new england patriots <br>roster | schedule",
+      footballImage: "images/football/newenglandpatriots.png",
+      hockeyTitle: "new york islanders <br> roster | schedule",
+      hockeyImage: "images/hockey/newyorkislanders.png",
+      basketballTitle: "new orleans pelicans <br> roster | schedule",
+      basketballImage: "images/basketball/neworleanspelicans.png",
+      baseballTitle: "new york yankees <br> roster | schedule",
+      baseballImage: "images/baseball/newyorkyankees.png",
+      soccerTitle: "west bromwich albion <br> roster | schedule",
+      soccerImage: "images/bpl/westbromwich.png",
+    },
+    {
+      footballTitle: "new orleans saints <br>roster | schedule",
+      footballImage: "images/football/neworleanssaints.png",
+      hockeyTitle: "new york rangers <br> roster | schedule",
+      hockeyImage: "images/hockey/newyorkrangers.png",
+      basketballTitle: "new york knicks <br> roster | schedule",
+      basketballImage: "images/basketball/newyorkknicks.png",
+      baseballTitle: "oakland athletics <br> roster | schedule",
+      baseballImage: "images/baseball/oaklandathletics.png",
+      soccerTitle: "west ham united <br> roster | schedule",
+      soccerImage: "images/bpl/westhamunited.png",
+    },
+    {
+      footballTitle: "new york giants <br>roster | schedule",
+      footballImage: "images/football/newyorkgiants.png",
+      hockeyTitle: "ottawa senators <br> roster | schedule",
+      hockeyImage: "images/hockey/ottawasenators.png",
+      basketballTitle: "oklahoma city thunder <br> roster | schedule",
+      basketballImage: "images/basketball/oklahomacitythunder.png",
+      baseballTitle: "philadelphia phillies <br> roster | schedule",
+      baseballImage: "images/baseball/philadelphiaphillies.png",
+    },
+    {
+      footballTitle: "new york jets <br>roster | schedule",
+      footballImage: "images/football/newyorkjets.png",
+      hockeyTitle: "philadelphia flyers <br> roster | schedule",
+      hockeyImage: "images/hockey/philadelphiaflyers.png",
+      basketballTitle: "orlando magic <br> roster | schedule",
+      basketballImage: "images/basketball/orlandomagic.png",
+      baseballTitle: "pittsburgh pirates <br> roster | schedule",
+      baseballImage: "images/baseball/pittsburghpirates.png",
+     
+    },
+    {
+      footballTitle: "oakland raiders <br>roster | schedule",
+      footballImage: "images/football/oaklandraiders.png",
+      hockeyTitle: "pittsburgh penguins <br> roster | schedule",
+      hockeyImage: "images/hockey/pittsburghpenguins.png",
+      basketballTitle: "philadelphia 76ers <br> roster | schedule",
+      basketballImage: "images/basketball/philadelphia76ers.png",
+      baseballTitle: "san diego padres <br> roster | schedule",
+      baseballImage: "images/baseball/sandie.png",
+     
+    },
+    {
+      footballTitle: "philadelphia eagles <br>roster | schedule",
+      footballImage: "images/football/philadelphiaeagles.png",
+      hockeyTitle: "san jose sharks <br> roster | schedule",
+      hockeyImage: "images/hockey/sanjosesharks.png",
+      basketballTitle: "pheonix suns <br> roster | schedule",
+      basketballImage: "images/basketball/phoenixsuns.png",
+      baseballTitle: "san francisco giants <br> roster | schedule",
+      baseballImage: "images/baseball/sanfranciscogiants.png",
+      
+    },
+    {
+      footballTitle: "pittsburgh steelers <br>roster | schedule",
+      footballImage: "images/football/pittsburghsteelers.png",
+      hockeyTitle: "st. louis blues <br> roster | schedule",
+      hockeyImage: "images/hockey/stlouisblues.png",
+      basketballTitle: "portland trail blazers <br> roster | schedule",
+      basketballImage: "images/basketball/portlandtrailblazers.png",
+      baseballTitle: "seattle mariners <br> roster | schedule",
+      baseballImage: "images/baseball/seattlemariners.png",
+      
+    },
+    {
+      footballTitle: "san diego chargers <br>roster | schedule",
+      footballImage: "images/football/sandiegochargers.png",
+      hockeyTitle: "tampa bay lightning <br> roster | schedule",
+      hockeyImage: "images/hockey/tampabaylightning.png",
+      basketballTitle: "sacramento kings <br> roster | schedule",
+      basketballImage: "images/basketball/sacramentokings.png",
+      baseballTitle: "st. louis cardinals <br> roster | schedule",
+      baseballImage: "images/baseball/stlouiscardinals.png",
+   
+    },
+    {
+      footballTitle: "san francisco 49ers <br>roster | schedule",
+      footballImage: "images/football/sanfrancisco49ers.png",
+      hockeyTitle: "toronto maple leafs <br> roster | schedule",
+      hockeyImage: "images/hockey/torontomapleleafs.png",
+      basketballTitle: "san antonio spurs <br> roster | schedule",
+      basketballImage: "images/basketball/sanantoniospurs.png",
+      baseballTitle: "tampa bay rays <br> roster | schedule",
+      baseballImage: "images/baseball/tampabayrays.png",
+      
+    },
+    {
+      footballTitle: "seattle seahawks <br>roster | schedule",
+      footballImage: "images/football/seattleseahawks.png",
+      hockeyTitle: "vancouver canucks <br> roster | schedule",
+      hockeyImage: "images/hockey/vancouvercanucks.png",
+      basketballTitle: "toronto raptors <br> roster | schedule",
+      basketballImage: "images/basketball/torontoraptors.png",
+      baseballTitle: "texas rangers <br> roster | schedule",
+      baseballImage: "images/baseball/texasrangers.png",
+
+    },
+    {
+      footballTitle: "st. louis rams<br> roster | schedule",
+      footballImage: "images/football/stlouisrams.png",
+      hockeyTitle: "vegas golden knights <br> roster | schedule",
+      hockeyImage: "images/hockey/vegasgoldenknights.png",
+      basketballTitle: "utah jazz <br> roster | schedule",
+      basketballImage: "images/basketball/utahjazz.png",
+      baseballTitle: "toronto blue jays <br> roster | schedule",
+      baseballImage: "images/baseball/torontobluejays.png",
+  
+    },
+    {
+      footballTitle: "tampa bay buccaneers <br>roster | schedule",
+      footballImage: "images/football/tampabaybuccaneers.png",
+      hockeyTitle: "washington capitals <br> roster | schedule",
+      hockeyImage: "images/hockey/washingtoncapitals.png",
+      basketballTitle: "washington wizards <br> roster | schedule",
+      basketballImage: "images/basketball/washingtonwizards.png",
+      baseballTitle: "washington nationals <br> roster | schedule",
+      baseballImage: "images/baseball/washingtonnationals.png",
+    },
+    {
+      footballTitle: "tennessee titans <br>roster | schedule",
+      footballImage: "images/football/tennesseetitans.png",
+      hockeyTitle: "winnipeg jets <br> roster | schedule",
+      hockeyImage: "images/hockey/winnipeg_jets.png",
+    },
+    {
+      footballTitle: "washington redskins <br> roster | schedule",
+      footballImage: "images/football/washingtonredskins.png",
+    }
+  ];
+
+
+  $('#hamburger').click(function(){
+  $('header').toggleClass('open');
+});
+//football
+$('.fb_drop').hide();
+  $('.fb_arrow').click(function() {
+    $(this).toggleClass('flip').next().slideToggle(300);
+    });
+  for (let team of teams){
+    let template = `<div class='card'><img src="${team.footballImage}" class="team-logo">  <div class='content'><h2>${team.footballTitle}</h2> </div></div>`;
+      $('.fb_drop').append(template);
+  }
+//baseball
+  $('.baseball_drop').hide();
+  $('.baseball_arrow').click(function() {
+    $(this).toggleClass('flip').next().slideToggle(300);
+    });
+  for (let team of teams){
+    let template = `<div class='card'><img src="${team.baseballImage}" class="team-logo">  <div class='content'><h2>${team.baseballTitle}</h2> </div></div>`;
+      $('.baseball_drop').append(template);
+  }
+//basketball
+  $('.basketball_drop').hide();
+  $('.basketball_arrow').click(function() {
+    $(this).toggleClass('flip').next().slideToggle(300);
+    });
+  for (let team of teams){
+    let template = `<div class='card'><img src="${team.basketballImage}" class="team-logo">  <div class='content'><h2>${team.basketballTitle}</h2> </div></div>`;
+      $('.basketball_drop').append(template);
+  }
+//hockey
+  $('.hockey_drop').hide();
+  $('.hockey_arrow').click(function() {
+    $(this).toggleClass('flip').next().slideToggle(300);
+    });
+  for (let team of teams){
+    let template = `<div class='card'><img src="${team.hockeyImage}" class="team-logo">  <div class='content'><h2>${team.hockeyTitle}</h2> </div></div>`;
+      $('.hockey_drop').append(template);
+  }
+  //soccer
+  $('.soccer_drop').hide();
+  $('.soccer_arrow').click(function() {
+    $(this).toggleClass('flip').next().slideToggle(300);
+    });
+  for (let team of teams){
+    let template = `<div class='card'><img src="${team.soccerImage}" class="team-logo">  <div class='content'><h2>${team.soccerTitle}</h2> </div></div>`;
+      $('.soccer_drop').append(template);
+
+  }

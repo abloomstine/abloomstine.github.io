@@ -1,0 +1,177 @@
+/*html{
+	background-image: url(../images/sportsbackground.png);
+  	background-size: no-repeat;
+  	
+  	opacity: .8;
+}*/
+.welcome h3{
+	text-align: center;
+	padding: .5rem;
+/*	margin-top: 2rem;*/
+}
+.welcome h4{
+	text-align: center;
+	padding: .5rem;
+}
+.play{
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	margin: 2rem;
+	border-radius: 12px;
+	background-color: rgba(0,0,0,.1);
+}
+.sports{
+	opacity: 0.8;
+	text-align: left;
+	margin: 4rem auto;
+	margin-top:.5rem;
+	width: 80%;
+	background-color: #a6ce9c;
+	color: white;
+}
+.bakeire{
+	padding: 1rem;
+  display:flex;
+  flex-wrap: wrap;
+  top: 0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin: auto;
+  align-items: center;
+ }
+ .bakeire h3{
+ 	text-align: left;
+ }
+.container{
+    width: 90%;
+    align-items: center;
+    margin: .5rem;
+    border: 2px solid #a6ce9c;
+    border-radius: 10px;
+ }
+
+.mom{
+  width: 100%;
+  height: 20vh;
+}
+
+
+/*.bakeire {
+	border-top: 2px solid gray;
+	margin: 2rem;
+	padding: 1rem;
+}
+.bakeire h3{
+	text-align: left;
+}
+.mom{
+	display: inline-block;
+	text-align: center:;
+	margin-top: 1rem;
+	position: center;
+	vertical-align: middle;
+	padding:1rem;
+	width: calc(90%/3);
+}*/
+section>section{
+	letter-spacing: 3px;
+	padding: 15px;
+	border-bottom: 2px solid white;
+}
+section>img{
+	height: 1.3rem;
+	float: right;
+	cursor: pointer;
+}
+.label{
+	margin: 0 5px;
+	height: 1.3rem;
+	float: left;
+}
+.content h2 {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: gray;
+}
+section>div{
+  margin: 10px -12px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: calc(100%/4);
+  font-size: 2vh;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.card img {
+  height:60%;
+  width: 90%;
+}
+.card { 
+  transition: all 200ms ease-in-out; 
+}
+.card:hover { 
+  transform: scale(1.05);
+  background-color: #a6ce9c;
+  color: white;
+}
+.flip {
+  transform: rotate(-180deg);
+  transition: transform 300ms;
+}
+@media (min-width: 768px){
+	
+.content h2 {
+/*  position: absolute;*/
+  /*top: 82%;*/
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+/*  font-weight: normal;*/
+  color: gray;
+}
+
+.card{
+  width: calc(100%/6);
+  font-size: 2vh;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.card img {
+  height:70%;
+  width: 90%;
+}
+.card { 
+  transition: all 200ms ease-in-out; 
+}
+.card:hover { 
+  transform: scale(1.05);
+  background-color: #a6ce9c;
+  color: white;
+}
+.bakeire{
+	display: inline-block;
+	top: 0;
+  	bottom: 0;
+  	right:0;
+  	left:0;
+  	margin: 0 auto;  
+  	align-items: middle;
+}
+  .container{
+  display: inline-block;
+  width: calc(80%/2);
+  padding: 5px;
+  border: 2px solid #a6ce9c;
+}
+}
+

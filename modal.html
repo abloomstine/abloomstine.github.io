@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ulf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>diadem</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/headerfooter.css">
+</head>
+
+<body>
+<header class="open">
+  <a href="diadem.html"><img src="images/diademlogo.png" class ="logo"></a>
+  <div id="hamburger">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
+  </div>
+  <nav id="dropdown">
+    <a href="diadem.html">home</a>
+    <a href="aboutus.html">about us</a>
+    <a href="sports.html">sports</a>
+    <a href="modal.html">sign up</a>
+  </nav>
+</header>
+<section>
+  <div class = "modal">
+  <div class="modal-header">
+     <div id="output">
+        <h3>welcome to the fam</h3>
+        <div class ='force'> <img src= "images/force.gif"></div>
+      </div>
+
+  </div>
+
+  <div class= "modal-body"> 
+    <div class="signup">
+      <form>    
+          name:<br>
+          <input type="text" name="name" ><br> 
+          email: <br>
+          <input type="email" name="email" ><br>
+          phone number:<br>
+         <input type="tel" name="phonenumber"><br>
+          username:<br>
+          <input type="text" name="username">
+         <br>
+          <button>submit</button> 
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer"> </div>
+
+</div>
+
+<div class='main'>
+  <div class = 'clicktojoin'> 
+	 <h2> join for free! <h2>
+	 <h3> best of luck <h3>
+	 <button>sign up</button>
+    <br>
+    <br>
+    <br>
+    <div class = 'video'> <iframe src="https://drive.google.com/file/d/1tl1cbOHzSQcUMBthH_CZ7-sSxMIg9ecS/preview"></iframe></div>
+  </div>
+  <div class='an-ad'>
+	 <a href="https://www.instagram.com/monicabloomstine/?hl=en"> 
+	 <h3> this is not an ad </h2>
+	 <h5> (totally an ad) </h5>
+	   <img src ="images/dinkydoosie.jpg">
+	   <img src = "images/Logo-4.png">
+     <img src ="images/eastercookies.jpg">
+	   </a>
+  </div>
+  </div>
+
+</section>
+
+
+<footer>
+      <div class="networking">
+        <a href="https://www.twitter.com/livediadem">
+        <img src="images/twitter.png" alt="twitter"></a>
+        <a href="https://www.livediadem.com/"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/livediadem/?hl=en"><img src="images/insta.png" alt="instagram"></a>
+      </div>
+      <div class="copyright">
+        copyright 2018 diadem
+      </div>
+    </footer>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+
+$('#hamburger').click(function(){
+  $('header').toggleClass('open');
+});
+$('button').click(function(){
+  $('body').addClass('modal-open');
+})
+  
+</script>
+ <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA_I2mOsJMrRjpqLxgIxa3Xvrj9SNZ9Mw8",
+    authDomain: "fewd-test-19ac1.firebaseapp.com",
+    databaseURL: "https://fewd-test-19ac1.firebaseio.com",
+    projectId: "fewd-test-19ac1",
+    storageBucket: "fewd-test-19ac1.appspot.com",
+    messagingSenderId: "325697870083"
+  };
+  firebase.initializeApp(config);
+
+    $(document).ready(function(){
+
+      $('button').click(function(event){
+
+        event.preventDefault();
+
+        if ($('input')[0].validity.valid) {
+
+          var datetime = new Date().toString();
+
+          var registration = {
+            email: $('input').val(),
+            timestamp: datetime
+          };
+
+          firebase.database().ref('registrations').push().set(registration)
+              .then(function() {}
+
+                $('form').slideUp();
+
+        } else {
+
+          $('h1').fadeOut('fast', function(){
+            $(this).text('Umm...Try again.').slideDown();
+          });
+
+        }
+
+      });
+
+    });
+</script>
+
+</body>

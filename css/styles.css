@@ -1,0 +1,44 @@
+#intro{
+  background-color: white;
+  background-image: url(../images/victory.jpg);
+  background-size: cover;
+  opacity: .8;
+  color: white;
+  padding: 2rem;
+  height: 100vh;
+}
+#intro h1, h3, p{
+  width: 70%;
+  text-align: left;
+}
+h3{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid white;
+}
+h4{
+  padding: 5px;
+}
+
+#news>div{ 
+  padding: 5px;
+  box-shadow: 3px 3px 3px -2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin: 14px;
+  text-align: center;
+  background-color: #a6ce9c;
+}
+@media (min-width: 768px){
+   #news {
+  display: flex;
+  min-width: 90%;
+  font-size: 3vh;
+}
+}
+/*.let-there-be-light header img {
+  animation: grow-in 3s both 1s ease-in-out;  
+}
+
+.let-there-be-light {
+  background-color: green;
+}*/
